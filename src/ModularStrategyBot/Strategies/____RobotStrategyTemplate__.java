@@ -1,12 +1,8 @@
 package ModularStrategyBot.Strategies;
 
-import ModularStrategyBot.Path.*;
-import battlecode.common.Clock;
 import battlecode.common.Direction;
 import battlecode.common.MapLocation;
 import battlecode.common.RobotController;
-import battlecode.common.RobotType;
-import battlecode.common.Team;
 
 public class ____RobotStrategyTemplate__ extends Strategy {
 
@@ -14,12 +10,13 @@ public class ____RobotStrategyTemplate__ extends Strategy {
 
 	public void run() {
 		Direction dir;
+		MapLocation myLoc;
 		try {
 			switch (rc.getType()) {
 			case HQ:
 				// Find Spawn direction
 				// Check Straight
-				MapLocation myLoc = rc.getLocation(); 
+				myLoc = rc.getLocation(); 
 				dir = myLoc.directionTo(rc.senseEnemyHQLocation());
 				while ( true ) { 
 					if ( rc.isActive() ) {

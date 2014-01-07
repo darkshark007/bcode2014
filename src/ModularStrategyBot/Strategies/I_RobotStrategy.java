@@ -11,6 +11,11 @@ public interface I_RobotStrategy {
 	public void run();
 	
 	public void goTo(MapLocation in) throws GameActionException;
+	public void goTo(MapLocation in,I_Orders orders) throws GameActionException;
 
 	public void followPath(Path in) throws GameActionException;
+	
+	public void takeStepTowards(MapLocation in) throws GameActionException;
+	
+	public boolean locIsOnMap(MapLocation in);
 }

@@ -3,6 +3,11 @@ package ModularStrategyBot.Broadcast;
 import battlecode.common.GameActionException;
 import battlecode.common.RobotController;
 
+/**
+ * Basic broadcast class, uses the default broadcast methods available to the robot controller
+ * @author Stephen Bush
+ *
+ */
 public class Broadcast implements I_Broadcast {
 
 	RobotController rc;

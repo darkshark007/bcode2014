@@ -9,14 +9,14 @@ import battlecode.common.RobotController;
 import battlecode.common.RobotType;
 import battlecode.common.Team;
 
-public class BasicRunAroundStrategy extends Strategy {
+public class CirleAroundTheCenterStrategy extends Strategy {
 	
 	I_Broadcast bc = new Broadcast(rc);
 	
 	final int BC_CHECK_PASTR = 0;
 	
 
-	public BasicRunAroundStrategy(RobotController in) { super(in); }
+	public CirleAroundTheCenterStrategy(RobotController in) { super(in); }
 
 	public void run() {
 		Direction dir;
@@ -81,6 +81,7 @@ public class BasicRunAroundStrategy extends Strategy {
 									if ( rc.canMove(dir)) rc.move(dir);
 								}
 							}
+							
 							myDistLim = myDistLim * 0.95;
 						}
 						else {

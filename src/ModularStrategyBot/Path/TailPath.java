@@ -1,6 +1,5 @@
 package ModularStrategyBot.Path;
 
-import ModularStrategyBot.Graph.PathGenerator.tailPathNode;
 import battlecode.common.MapLocation;
 
 public class TailPath {

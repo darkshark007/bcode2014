@@ -4,6 +4,10 @@ import battlecode.common.Clock;
 import battlecode.common.GameActionException;
 import battlecode.common.RobotController;
 
+/**
+ * This is a simple example of a series of executable instructions that might be defined using the I_Orders interface. 
+ * @author Stephen Bush
+ */
 public class WearHat implements I_Orders {
 	
 	boolean isWearingHat = false;
